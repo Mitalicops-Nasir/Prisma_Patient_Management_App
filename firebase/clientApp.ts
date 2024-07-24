@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBwozBAUBaI5a66HAzUOx3MDP4qveZqNIo",
-  authDomain: "patient-management-app-e30ae.firebaseapp.com",
-  projectId: "patient-management-app-e30ae",
-  storageBucket: "patient-management-app-e30ae.appspot.com",
-  messagingSenderId: "86902898161",
-  appId: "1:86902898161:web:ce8fbf4cb50d0efe725850",
-  measurementId: "G-Y5HXQLGX9P",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
