@@ -1,11 +1,11 @@
 import React from "react";
-import { Section } from "../../constants/Section";
 import { CustomButton } from "../../constants/Button";
+import Section from "@/constants/Section";
 
 
 const CTA = () => {
   return (
-    <Section>
+    <section className="p-[5%]">
       <div className="p-5 xl:p-20 bg-sky-400 rounded-2xl w-full h-full shadow-2xl text-center">
         <h1 className="text-2xl  md:text-4xl text-stone-50 font-bold">
           Subscribe For Any News and Updates From Us
@@ -26,7 +26,7 @@ const CTA = () => {
           </CustomButton>
         </div>
       </div>
-    </Section>
+    </section>
   );
 };
 

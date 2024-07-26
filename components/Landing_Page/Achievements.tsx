@@ -1,6 +1,5 @@
+import Section from "@/constants/Section";
 import React from "react";
-import { Section } from "../../constants/Section";
-
 
 const Achievements = () => {
   return (

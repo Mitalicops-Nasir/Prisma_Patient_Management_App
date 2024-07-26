@@ -8,8 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import Link from "next/link";
-import { Section } from "../../constants/Section";
 import SpecialistDoc from "./UI/SpecialistDoc";
+import Section from "@/constants/Section";
 
 const Faculty = () => {
   let settings = {
@@ -49,7 +49,7 @@ const Faculty = () => {
     ],
   };
   return (
-    <Section>
+    <section className="p-[5%]">
       <div className="text-center mb-7">
         <h1 className="text-3xl text-black font-bold ">
           Meet Our Specialist Doctors
@@ -85,7 +85,7 @@ const Faculty = () => {
           />
         </Slider>
       </div>
-    </Section>
+    </section>
   );
 };
 

@@ -5,7 +5,9 @@ import React from "react";
 import Image from "next/image";
 import { IoMdStar } from "react-icons/io";
 import Slider from "react-slick";
-import { Section } from "../../constants/Section";
+import { TestimonialsCard } from "./UI/SpecialistDoc";
+import Section from "@/constants/Section";
+
 
 interface StarIconProps {
   count?: number;
@@ -59,7 +61,7 @@ const Testimonials = () => {
     ],
   };
   return (
-    <Section>
+    <section className="p-[5%]">
       <div className="text-center mb-7">
         <h1 className="text-3xl text-black font-bold">
           Our Special Patients Say!
@@ -72,124 +74,51 @@ const Testimonials = () => {
 
       <div className="grid gap-6  grid-cols-[minmax(200px,1fr)] grid-flow-row mt-14">
         <Slider {...settings}>
-          <div className="text-center flex gap-3 items-center flex-col bg-slate-100 shadow-xl p-2 rounded-xl">
-            <div className="flex justify-center">
-              <Image
-                src="/assets/Blog-1.jpg"
-                width={500}
-                height={500}
-                alt="specialist-1"
-                className="w-[4rem] h-[4rem] rounded-[50%]"
-              />
-            </div>
-            <div className="flex items-center justify-center mb-2 mt-2 ">
-              <Stars count={5} />
-            </div>
-            <div className="mb-2 flex flex-col">
-              <h1 className="text-[16px] font-bold text-black">Well Jack</h1>
-
-              <p className="text-[12px] font-medium text-gray-400">
-                Great Service
-              </p>
-
-              <p className="text-[12px] font-medium text-gray-400 mt-2">
-                lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
-                ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-                dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit
-                amet
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center flex gap-3 items-center flex-col bg-slate-100 shadow-lg p-2 rounded-xl">
-            <div className="flex justify-center">
-              <Image
-                src="/assets/Blog-1.jpg"
-                width={500}
-                height={500}
-                alt="specialist-1"
-                className="w-[4rem] h-[4rem] rounded-[50%]"
-              />
-            </div>
-            <div className="flex items-center justify-center mb-2 mt-2">
-              <Stars count={5} />
-            </div>
-            <div className="mb-2 flex flex-col">
-              <h1 className="text-[16px] font-bold text-black">Maria Johnson</h1>
-
-              <p className="text-[12px] font-medium text-gray-400">
-                The ER Service is Swift and Efficient
-              </p>
-
-              <p className="text-[12px] font-medium text-gray-400 mt-2">
-                lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
-                ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-                dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit
-                amet
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center flex gap-3 items-center flex-col bg-slate-100 shadow-lg p-2 rounded-xl">
-            <div className="flex justify-center">
-              <Image
-                src="/assets/Blog-1.jpg"
-                width={500}
-                height={500}
-                alt="specialist-1"
-                className="w-[4rem] h-[4rem] rounded-[50%]"
-              />
-            </div>
-            <div className="flex items-center justify-center mb-2 mt-2">
-              <Stars count={3} />
-            </div>
-            <div className="mb-2 flex flex-col">
-              <h1 className="text-[16px] font-bold text-black">Hugh Thomas</h1>
-
-              <p className="text-[12px] font-medium text-gray-400">
-                The Dentist is Doable
-              </p>
-
-              <p className="text-[12px] font-medium text-gray-400 mt-2">
-                lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
-                ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-                dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit
-                amet
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center flex gap-3 items-center flex-col bg-slate-100 shadow-lg p-2 rounded-xl">
-            <div className="flex justify-center">
-              <Image
-                src="/assets/Blog-1.jpg"
-                width={500}
-                height={500}
-                alt="specialist-1"
-                className="w-[4rem] h-[4rem] rounded-[50%]"
-              />
-            </div>
-            <div className="flex items-center justify-center mb-2 mt-2">
-              <Stars count={4} />
-            </div>
-            <div className="mb-2 flex flex-col">
-              <h1 className="text-[16px] font-bold text-black">Nancy Smith</h1>
-
-              <p className="text-[12px] font-medium text-gray-400">
-                Nutrition Services are Good
-              </p>
-
-              <p className="text-[12px] font-medium text-gray-400 mt-2">
-                lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
-                ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-                dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit
-                amet
-              </p>
-            </div>
-          </div>
+          <TestimonialsCard
+            title="Great Service"
+            author="Well Jack"
+            icon={<Stars count={5} />}
+            imgSrc="/assets/Blog-1.jpg"
+            description="lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+          />
+          <TestimonialsCard
+            title="Ther ER Department is Fast"
+            author="Elazebth Shaw"
+            icon={<Stars count={5} />}
+            imgSrc="/assets/Blog-1.jpg"
+            description="lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+          />
+          <TestimonialsCard
+            title="The Doctors Are very Hospitable"
+            author="Samantha Ray"
+            icon={<Stars count={5} />}
+            imgSrc="/assets/Blog-1.jpg"
+            description="lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+          />
+          <TestimonialsCard
+            title="Infrastructure Is Robust"
+            author="John Elvish"
+            icon={<Stars count={5} />}
+            imgSrc="/assets/Blog-1.jpg"
+            description="lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+          />
+          <TestimonialsCard
+            title="Cleanliness is average"
+            author="Carter Tucker"
+            icon={<Stars count={3} />}
+            imgSrc="/assets/Blog-1.jpg"
+            description="lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+          />
+          <TestimonialsCard
+            title="Staff are average"
+            author="Ahmed Rashid"
+            icon={<Stars count={3} />}
+            imgSrc="/assets/Blog-1.jpg"
+            description="lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+          />
         </Slider>
       </div>
-    </Section>
+    </section>
   );
 };
 

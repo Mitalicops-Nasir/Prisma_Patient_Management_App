@@ -2,19 +2,19 @@ import React from "react";
 import Image from "next/image";
 
 import { RiShieldCheckFill } from "react-icons/ri";
-import { Section } from "../../constants/Section";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import Section from "@/constants/Section";
 
 const Hero = () => {
   return (
-    <Section>
+    <section className="p-[5%]">
       <div className="grid lg:grid-cols-2 gap-12 mb-8 grid-cols-1">
         <div className="w-full">
-          <h1 className="text-4xl xl:text-6xl text-black font-semibold mt-3">
+          <h1 className="text-[2.25rem] xl:text-[3rem] leading-[1.2] text-black font-semibold mt-3">
             We place your health at the top of our priority list
           </h1>
-          <p className="text-[1rem] font-medium w-full  text-gray-400 mt-4 leading-7">
+          <p className="text-[1rem] font-medium w-full text-gray-400 mt-4 leading-7">
             We are not just a fitness center;we're a community of passionate
             individuals dedicated transforming lives through helth and wellness
             hfdkahfkah fhfkfkfakhfakh fkahfkahfkahfkafkhfk
@@ -53,7 +53,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </Section>
+    </section>
   );
 };
 

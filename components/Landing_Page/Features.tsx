@@ -7,8 +7,8 @@ import Image from "next/image";
 
 import { TbHandClick } from "react-icons/tb";
 import { CustomButton } from "../../constants/Button";
-import { Section } from "../../constants/Section";
 import { Doctors } from "@/constants";
+import Section from "@/constants/Section";
 
 const Features = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,7 +18,7 @@ const Features = () => {
   };
 
   return (
-    <Section>
+    <section className="p-[5%]">
       <div className="">
         <h1 className="text-black text-[2rem] font-bold text-center">
           Here Is What You Need To Do in Just three Easy Steps
@@ -204,7 +204,7 @@ const Features = () => {
           </div>
         </div>
       </div>
-    </Section>
+    </section>
   );
 };
 

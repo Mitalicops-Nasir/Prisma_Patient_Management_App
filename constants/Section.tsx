@@ -6,7 +6,7 @@ interface SectionProps {
   bgColor?: string; // Define bgColor prop
 }
 
-export const Section = ({
+const Section = ({
   children,
   className,
   bgColor = "bg-slate-200",
@@ -17,5 +17,11 @@ export const Section = ({
   // Check if the specified bgColor is one of the allowed options
   const bgClass = allowedBgColors.includes(bgColor) ? bgColor : "bg-slate-200";
 
-  return <section className={`p-[5%] w-full ${bgClass}`}>{children}</section>;
+  return (
+    <section className={`p-[5%] w-full ${bgClass} ${className}`}>
+      {children}
+    </section>
+  );
 };
+
+export default Section;
