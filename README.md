@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Prisma Patient Manager
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![NextAuth](https://img.shields.io/badge/NextAuth.js-FFFFFF?style=for-the-badge&logo=nextauth&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white)
+![Resend API](https://img.shields.io/badge/Resend_API-007ACC?style=for-the-badge&logo=api&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=ui&logoColor=white)
+
+## Overview
+
+Prisma Patient Manager is a comprehensive application designed to streamline patient management and appointment scheduling for hospitals. The platform features two main dashboards: one for patients and one for hospital administrators.
+
+### Features
+
+- **Patient Dashboard**: 
+  - Patients can register and log in to their unique dashboards.
+  - View their appointments with detailed information such as status, time, and physician.
+  - Option to cancel appointments directly from the dashboard.
+
+- **Admin Dashboard**:
+  - Designed exclusively for hospital staff to manage patients.
+  - View all patient appointments and manage scheduling.
+  - Ability to schedule and cancel appointments.
+  - Automated email notifications to patients upon scheduling or canceling appointments, powered by the Resend API.
+
+- **Landing Page**: 
+  - A welcoming and informative landing page for new and returning users.
+
+## Tech Stack
+
+- ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+- ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+- ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+- ![NextAuth](https://img.shields.io/badge/NextAuth.js-FFFFFF?style=for-the-badge&logo=nextauth&logoColor=black)
+- ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white)
+- ![Resend API](https://img.shields.io/badge/Resend_API-007ACC?style=for-the-badge&logo=api&logoColor=white)
+- ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=ui&logoColor=white)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Patient Dashboard**: 
+  - Register and log in to access personal appointment details.
+  - Manage appointments, view status, and cancel if necessary.
 
-## Learn More
+- **Admin Dashboard**:
+  - Hospital staff can log in to manage patient appointments.
+  - Schedule and cancel appointments with automated email notifications.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For any inquiries, collaboration or feedback, please reach out to mitalicops@gmail.com.
