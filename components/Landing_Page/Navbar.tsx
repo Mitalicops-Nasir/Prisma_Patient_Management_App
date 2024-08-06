@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
-import { CustomButton } from "../../constants/Button";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { LoginButton } from "../auth/login-button";

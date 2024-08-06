@@ -9,7 +9,6 @@ import { Doctors } from "@/constants";
 import StatusBadge from "../patient-manager-component/StatusBadge";
 import AppointmentModal from "../patient-manager-component/AppointmentModal";
 import { Appointment } from "@/types";
-
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
 
@@ -86,6 +85,7 @@ export const columns: ColumnDef<Appointment>[] = [
         <div className="flex gap-1">
           <AppointmentModal
             type="schedule"
+            disabled={"scheduled" === appointment?.status}
             patientId={appointment.patient.id}
             userId={appointment.id}
             appointment={appointment}
@@ -95,6 +95,7 @@ export const columns: ColumnDef<Appointment>[] = [
 
           <AppointmentModal
             type="cancel"
+            disabled={"cancelled" === appointment?.status}
             patientId={appointment.patient.id}
             userId={appointment.id}
             appointment={appointment}

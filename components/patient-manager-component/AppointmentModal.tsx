@@ -12,17 +12,16 @@ import {
 } from "@/components/ui/dialog";
 import { useState } from "react";
 
-
 import { Button } from "../ui/button";
 import { Appointment } from "@/types";
 import { AppointmentForm } from "../forms/AppointmentForm";
-
 
 const AppointmentModal = ({
   type,
   patientId,
   userId,
   appointment,
+  disabled,
 }: {
   type: "schedule" | "cancel";
   patientId: string | null;
@@ -30,6 +29,7 @@ const AppointmentModal = ({
   appointment?: Appointment;
   title: string;
   description: string;
+  disabled?: boolean;
 }) => {
   const [Open, setOpen] = useState(false);
 
@@ -37,6 +37,7 @@ const AppointmentModal = ({
     <Dialog open={Open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button
+          disabled={disabled}
           variant="ghost"
           className={`capitalize ${type === "schedule" && "text-green-500"} ${
             type === "cancel" && "text-red-700"
