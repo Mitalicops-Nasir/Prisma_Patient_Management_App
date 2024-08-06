@@ -15,10 +15,10 @@ const Hero = () => {
             We place your health at the top of our priority list
           </h1>
           <p className="text-[1rem] font-medium w-full text-gray-400 mt-4 leading-7">
-            We are not just a fitness center;we're a community of passionate
-            individuals dedicated transforming lives through helth and wellness
-            hfdkahfkah fhfkfkfakhfakh fkahfkahfkahfkafkhfk
-            afkahfkahfkahfkafhkafakh
+            We are not just a fitness center we&apos;re a community of
+            passionate individuals dedicated transforming lives through health
+            and wellness, our Hospitals are equipped with top notch equipment to
+            heal and save our patients{" "}
           </p>
           <Button asChild variant="landing_page" size="lg" className="mt-4">
             <Link href="/auth/register">Register Now</Link>
