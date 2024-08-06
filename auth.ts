@@ -3,8 +3,8 @@ import NextAuth from "next-auth";
 import { getUserById } from "./data/user";
 import { db } from "@/lib/db";
 
+import { PrismaAdapter } from "@auth/prisma-adapter";
 import { getTwoFactorConfirmationByUserId } from "./data/two-factor-confirmation";
-import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import authConfig from "./auth.config";
 import { Gender, UserRole } from "@prisma/client";
 import { getAccountByUserId } from "./data/account";
